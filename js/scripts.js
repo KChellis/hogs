@@ -1,14 +1,12 @@
 $(function(){
   $("img").click(function(event) {
-
     var id = event.target.id;
-    alert(id);
     if(id === "hedgehog"){
-      $(".hedgehog").show();
+      $(".hedgehog").toggle();
     } else if (id === "warthog") {
-      $(".warthog").show();
+      $(".warthog").toggle();
     } else {
-      $(".kune").show();
+      $(".kune").toggle();
     }
   });
 });
